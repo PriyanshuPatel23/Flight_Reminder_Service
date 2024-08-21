@@ -29,8 +29,18 @@ const fetchPendingMails = async () => {
   }
 };
 
+const updateTicket = async (ticketId, data) => {
+  try {
+    const ticket = await repo.update(ticketId, data);
+    return ticket;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 module.exports = {
   sendBasicMail,
   fetchPendingMails,
   createTicket,
+  updateTicket
 };

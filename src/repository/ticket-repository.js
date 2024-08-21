@@ -31,7 +31,22 @@ class ticketRepository {
         },
       });
       return ticket;
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async update(ticketId, data) {
+    try {
+      const ticket = await NotificationTicket.findByPk(ticketId);
+      if (data.status) {
+        ticket.status = data.status;
+        await ticket.save();
+        return ticket;
+      }
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
 
