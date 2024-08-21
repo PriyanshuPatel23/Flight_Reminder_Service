@@ -42,5 +42,5 @@ module.exports = {
   sendBasicMail,
   fetchPendingMails,
   createTicket,
-  updateTicket
+  updateTicket,
 };
