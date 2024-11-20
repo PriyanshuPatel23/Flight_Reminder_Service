@@ -11,8 +11,7 @@ The **Notification Service** handles the scheduling and sending of notifications
 ### Steps to Set Up the Project
 
 1. **Clone the Repository**
-   `git clone <repository_url>`
-   `cd <repository_folder>`
+   `git clone https://github.com/PriyanshuPatel23/Flight_Reminder_Service.git`
 
 2. **Install Dependencies**
    `npm install`
